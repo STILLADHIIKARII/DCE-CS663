@@ -13,11 +13,6 @@ A Digital Image Processing project using **Zero-Reference Deep Curve Estimation 
 ## Method
 
 DCE-Net predicts pixel-wise curve parameters to enhance image illumination iteratively.
-
-\[
-\mathcal{C}(I;\alpha)=I+\alpha I(1-I)
-\]
-
 The implementation uses seven convolutional layers, eight enhancement iterations, and 24 output parameter maps for RGB images.
 
 ## Dataset
@@ -42,12 +37,6 @@ The trained image model is reused for webcam input:
 
 The webcam pipeline uses a target resolution of **640 × 480**. Frames are processed independently, so temporal flicker may occur.
 
-Checkpoint used:
-
-```text
-s5_seed1_w_exp0.75_exp_target0.4_w_tv5000.0_w_spa2.0
-```
-
 ## Installation
 
 ```bash
@@ -66,20 +55,6 @@ Methods can be compared using:
 
 Evaluate all methods on the same images for a fair comparison.
 
-## Repository Structure
-
-Adapt this structure to your implementation:
-
-```text
-Zero-DCE/
-├── notebooks/
-├── src/
-├── checkpoints/
-├── results/
-├── requirements.txt
-└── README.md
-```
-
 ## Acknowledgements
 
-Based on **Zero-Reference Deep Curve Estimation for Low-Light Image Enhancement (Zero-DCE)**. Please cite the original paper and LOL dataset.
+Based on **Zero-Reference Deep Curve Estimation for Low-Light Image Enhancement (Zero-DCE)**.
