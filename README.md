@@ -51,7 +51,6 @@ Methods can be compared using:
 
 - PSNR and SSIM
 - Mean brightness and contrast
-- Processing time / FPS
 
 Evaluate all methods on the same images for a fair comparison.
 
